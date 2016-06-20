@@ -1,12 +1,14 @@
-<!doctype html>
+ï»¿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ÑéÖ¤Âëdemo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>æ¬¢è¿</title>
 </head>
 <body>
 
-    <input id="dian" type="button" value="µã»÷»ñÈ¡ÑéÖ¤Âë">
+    <input id="dian" type="button" value="ç‚¹å‡»è·å–éªŒè¯ç ">
 
 
     <script src="js/jquery-1.11.0.js"></script>
@@ -14,11 +16,10 @@
     <script>
         $(document).ready(function () {
             $("#dian").click(function () {
-                //²ÎÊı£ºµÚÒ»¸öÎªÍ¼Æ¬Â·¾¶£¬µÚ¶ş¸öÎª³É¹¦»Øµ÷º¯Êı£¬µÚÈı¸öÎªÊ§°Ü»Øµ÷º¯Êı¡£
                 H_testcode.ready("images/lss.jpg", function (e, x) {
-                    alert("³É¹¦£¡£¬ºÄÊ±£º" + e + "Ãë,Îó²î£º" + x + "ÏñËØ");
+                    window.location.href = 'index1.html';
                 }, function (e, x) {
-                    alert("Ê§°Ü£¡£¬ºÄÊ±£º" + e + "Ãë,Îó²î£º" + x + "ÏñËØ");
+                    alert('éªŒè¯ç å¤±è´¥ï¼Œè¯·é‡æ–°éªŒè¯');
                 });
             });
         });
