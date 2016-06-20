@@ -1,21 +1,27 @@
-ï»¿<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GF</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link rel="shortcut icon" type="image/x-icon" href="http://gf634.github.io/images/gf.png" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/default.css">
-    <link rel="stylesheet" media="screen" href="css/style.css">
+    <title>ÑéÖ¤Âëdemo</title>
 </head>
 <body>
-    <div class="container">
-        <div id="particles-js"></div>
-    </div>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+
+    <input id="dian" type="button" value="µã»÷»ñÈ¡ÑéÖ¤Âë">
+
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/diy_code.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#dian").click(function () {
+                //²ÎÊý£ºµÚÒ»¸öÎªÍ¼Æ¬Â·¾¶£¬µÚ¶þ¸öÎª³É¹¦»Øµ÷º¯Êý£¬µÚÈý¸öÎªÊ§°Ü»Øµ÷º¯Êý¡£
+                H_testcode.ready("images/lss.jpg", function (e, x) {
+                    alert("³É¹¦£¡£¬ºÄÊ±£º" + e + "Ãë,Îó²î£º" + x + "ÏñËØ");
+                }, function (e, x) {
+                    alert("Ê§°Ü£¡£¬ºÄÊ±£º" + e + "Ãë,Îó²î£º" + x + "ÏñËØ");
+                });
+            });
+        });
+    </script>
 </body>
 </html>
